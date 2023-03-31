@@ -66,13 +66,7 @@ class _01_Class {
 
         BlackBox bbox2 = new BlackBox();
 
-        //위에서 bbox란 객체를 만들었다면
-        // 여기선 bbox2란 객체를 만들었다.
-
-
-
-
-
+        //위에서 bbox란 객체를 만들었다면 여기선 bbox2란 객체를 만들었다.
 
 
     }

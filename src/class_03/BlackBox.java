@@ -9,8 +9,7 @@ package src.class_03;
 
 import org.w3c.dom.ls.LSOutput;
 
-public
-class BlackBox {
+public class BlackBox {
 
 
     //BlackBox 란 설계도를 만든 것이다.
@@ -20,6 +19,11 @@ class BlackBox {
     String resolution; //해상도
     int price; //가격
     String color; //색상
+
+    int serialNumber = 0; //시리얼 번호
+
+    static int counter = 0; //시리얼 번호를 생성함. 처음엔 0이었다가 ++연산을 통해 값을 증가
+
 
 // BlackBox는 4개의 인스턴스 변수 혹은 필드를 가진다고 할 수 있다.
 //modelName, resolution, price, color
@@ -43,6 +47,60 @@ class BlackBox {
     // class 변수는 canAutoReport는 클래스명.클래스변수명 형태로 접근한다.
     // 예) BlackBox.canAutoReport
 
+
+
+    ///////////////////////////////////////////
+    //08_생성자
+
+    //아래와 같은 형태가 생성자의 형태다.
+//    BlackBox() {
+//
+//    }
+
+
+    BlackBox() {
+        System.out.println("기본 생성자 호출");
+        this.serialNumber = ++counter;
+        // 처음 BlackBox 객체가 만들어질 때
+        // 이 BlackBox 생성자 함수가 실행된다.
+        // counter 값의 초기값은 0인데 0에 ++을 해줘서 1로 변한다
+        // 새로운 객체가 만들어질 때 마다 +1 이 된다.
+
+        System.out.println("새로운 시리얼 넘버를 발급받았습니다: " + this.serialNumber);
+
+
+    }
+
+
+    //아래 BlackBox는 사용자 정의 생성자 함수다.
+    //메서드를 오버로딩 할 수 있는 것처럼 생성자 함수도 여러개 만들 수 있다.
+    BlackBox(String modelName, String resolution, int price, String color) {
+
+       this();
+
+       //위의 this 설명
+
+        // 생성자 함수를
+
+
+        //생성자가 호출될 때 전달받는 파라미터 값을 인스턴스 변수에 대입하기
+
+        System.out.println("사용자 정의 생성자 호출");
+
+
+        this.modelName = modelName;
+        //인스턴스 변수로 만들어진 modelName에 우리가 위에서 전달받은
+        // 즉 String modelName 파라미터의 modelName을 정의해 줌
+
+        this.resolution = resolution;
+        this.price = price;
+        this.color = color;
+
+
+    }
+
+
+   //End Constructor ////////////////////////////////////////////
 
     // 자동신고 기능 method
     void autoReport() {
@@ -97,7 +155,7 @@ class BlackBox {
 
     }
 
-    // 기본값으로 시간, 속도는 true로 분은 5분 단위로 하고자 할 때
+//     기본값으로 시간, 속도는 true로 분은 5분 단위로 하고자 할 때
 //
 //    void record() {
 //        System.out.println("녹화를 시작합니다");
@@ -105,7 +163,7 @@ class BlackBox {
 //        System.out.println("영상에 속도정보가 표시됩니다.");
 //        System.out.println("영상은 5분입니다");
 //    }
-
+//
 
     // 위에처럼 작성하면 너무 불편하다.
     // 아래처럼 해결 가능하다.
@@ -115,4 +173,20 @@ class BlackBox {
         record(true, true, 5);
     }
 
+
+    //기존의 model name에 다른 텍스트를 추가하는 함수다.
+    //예) 까망이란 model name 앞에 (최신형)이란 텍스트 추가
+    void appendModelName ( String modelName ) {
+        //modelName += modelName;
+        //위에처럼 적으면 인스턴스 변수와 전달받은 파라미터 변수가 같은 것이다.
+        // 이 상태에서 실행시키면 '까망이'라고 나온다. '까망이(최신형)'
+        //이라고 나오지 않는다.
+
+        this.modelName += modelName;
+        //this.modelName이라고 쓰면 BlackBox class 안에 있는
+        //인스턴스 변수인 modelName을 가리키게 된다.
+
+        // this.modelName 뒤에 오는 modelName은 파라미터로 전달받은 modelName이 된다.
+
+    }
 }

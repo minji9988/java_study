@@ -34,7 +34,8 @@ class _05_MethodOverloading {
 
         b1.record();
         // 이렇게 record에 어떤 인자도 넣어주지 않으면
-        // BlackBox에 정의해 놓은 파라미터 없는 record 함수가 출력된다.
+        // BlackBox에 정의해 놓은 record 함수들 중 인자가 없는 함수로 넘어간다.
+
 
     }
 

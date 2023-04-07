@@ -59,14 +59,14 @@ public class BlackBox {
 
 
     BlackBox() {
-        System.out.println("기본 생성자 호출");
-        this.serialNumber = ++counter;
-        // 처음 BlackBox 객체가 만들어질 때
-        // 이 BlackBox 생성자 함수가 실행된다.
-        // counter 값의 초기값은 0인데 0에 ++을 해줘서 1로 변한다
-        // 새로운 객체가 만들어질 때 마다 +1 이 된다.
-
-        System.out.println("새로운 시리얼 넘버를 발급받았습니다: " + this.serialNumber);
+//        System.out.println("기본 생성자 호출");
+//        this.serialNumber = ++counter;
+//        // 처음 BlackBox 객체가 만들어질 때
+//        // 이 BlackBox 생성자 함수가 실행된다.
+//        // counter 값의 초기값은 0인데 0에 ++을 해줘서 1로 변한다
+//        // 새로운 객체가 만들어질 때 마다 +1 이 된다.
+//
+//        System.out.println("새로운 시리얼 넘버를 발급받았습니다: " + this.serialNumber);
 
 
     }
@@ -76,25 +76,29 @@ public class BlackBox {
     //메서드를 오버로딩 할 수 있는 것처럼 생성자 함수도 여러개 만들 수 있다.
     BlackBox(String modelName, String resolution, int price, String color) {
 
-       this();
-
-       //위의 this 설명
-
-        // 생성자 함수를
-
-
-        //생성자가 호출될 때 전달받는 파라미터 값을 인스턴스 변수에 대입하기
-
-        System.out.println("사용자 정의 생성자 호출");
-
-
-        this.modelName = modelName;
-        //인스턴스 변수로 만들어진 modelName에 우리가 위에서 전달받은
-        // 즉 String modelName 파라미터의 modelName을 정의해 줌
-
-        this.resolution = resolution;
-        this.price = price;
-        this.color = color;
+//       this(); //기본 생성자 호출
+//
+//       //위의 this 설명
+//        // this는 맨 처음에 만든 BlackBox 생성자 함수에 접근해서
+//        //    BlackBox() {
+//        //        System.out.println("기본 생성자 호출");
+//        //        this.serialNumber = ++counter;
+//        //        System.out.println("새로운 시리얼 넘버를 발급받았습니다: " + this.serialNumber);
+//        //    }
+//        // 위의 동작을 모두 시행한 다음에 this 아래 있는 동작을 시행하게 된다.
+//
+//
+//        System.out.println("사용자 정의 생성자 호출");
+//
+//
+//        //생성자가 호출될 때 전달받는 파라미터 값을 인스턴스 변수에 대입하기
+//        this.modelName = modelName;
+//        //인스턴스 변수로 만들어진 modelName에 우리가 위에서 전달받은
+//        // 즉 String modelName 파라미터의 modelName을 정의해 줌
+//
+//        this.resolution = resolution;
+//        this.price = price;
+//        this.color = color;
 
 
     }

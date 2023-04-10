@@ -193,4 +193,56 @@ public class BlackBox {
         // this.modelName 뒤에 오는 modelName은 파라미터로 전달받은 modelName이 된다.
 
     }
+
+    //Getter(값을 가지고 오는 Method), Satter(값을 설정하는 Method)
+    // getModelName 이렇게 앞에 get로 시작한 게 Getter다.
+    String getModelName() {
+        return modelName;
+    }
+
+    //Setter다.
+    void setModelName(String modelName) {
+        this.modelName = modelName; //this.modelName에 우리가 전달받은 modelName을 전해주면 됨
+    }
+
+    String getResolution() {
+
+        if(resolution == null || resolution.isEmpty()) {
+            return "판매자에게 문의하세요";
+        }
+        //isEmpty는 비어있단 뜻이다.
+        return resolution;
+    }
+
+    void setResolution(String resolution) {
+        this.resolution = resolution;
+    }
+
+    int getPrice() {
+        return price;
+    }
+
+    void setPrice(int price) {
+        //아무리 할인해도 100,000원 보단 비싸게 판다.
+
+        if (price < 10000) {
+            this.price = 10000;
+            // 이렇게 설정하면 -5000이라고 잘못 설정해도
+            // -50000이 아닌 100000원으로 자동 조정된다.
+        }
+        else {
+
+            this.price = price;
+        }
+    }
+
+    String getColor() {
+        return color;
+    }
+
+    void setColor(String color) {
+        this.color = color;
+    }
+
+
 }

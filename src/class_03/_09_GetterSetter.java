@@ -44,6 +44,5 @@ class _09_GetterSetter {
         // null이 뜨는 대신 "판매자에게 문의하세요."라고 뜬다.
 
 
-
     }
 }

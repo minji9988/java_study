@@ -194,10 +194,15 @@ public class BlackBox {
 
     }
 
+
+    ///////////////////Getter와 Setter ////////////////////////////////////////////////////////
+
     //Getter(값을 가지고 오는 Method), Satter(값을 설정하는 Method)
     // getModelName 이렇게 앞에 get로 시작한 게 Getter다.
     String getModelName() {
+
         return modelName;
+
     }
 
     //Setter다.

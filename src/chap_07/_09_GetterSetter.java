@@ -1,4 +1,4 @@
-package src.class_03;
+package src.chap_07;
 
 // set은 값을 설정하는 것
 // get은 설정한 값을 가져오는 것

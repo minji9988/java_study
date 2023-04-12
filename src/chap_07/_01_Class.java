@@ -3,7 +3,7 @@
 // 객체, 클래스, 인스턴스의 정의
 // 클래스와 객체를 생성하는 방법
 
-package src.class_03;
+package src.chap_07;
 
 public
 class _01_Class {

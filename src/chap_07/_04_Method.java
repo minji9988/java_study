@@ -1,4 +1,4 @@
-package src.class_03;
+package src.chap_07;
 
 
 // method들 호출하는 파일 ///////////////////

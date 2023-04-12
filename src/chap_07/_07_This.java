@@ -1,4 +1,4 @@
-package src.class_03;
+package src.chap_07;
 
 //this란?
 // 특정 변수가 인스턴스 변수임을 명시해 주는 것

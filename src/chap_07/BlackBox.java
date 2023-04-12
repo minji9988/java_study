@@ -5,9 +5,7 @@
 // static을 사용해서 class 변수 생성 방법
 // class 내에서 method 생성 방법
 
-package src.class_03;
-
-import org.w3c.dom.ls.LSOutput;
+package src.chap_07;
 
 public class BlackBox {
 
@@ -197,7 +195,7 @@ public class BlackBox {
 
     ///////////////////Getter와 Setter ////////////////////////////////////////////////////////
 
-    //Getter(값을 가지고 오는 Method), Satter(값을 설정하는 Method)
+    //Getter(값을 가지고 오는 Method), Setter(값을 설정하는 Method)
     // getModelName 이렇게 앞에 get로 시작한 게 Getter다.
     String getModelName() {
 

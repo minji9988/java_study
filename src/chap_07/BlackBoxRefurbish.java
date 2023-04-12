@@ -1,12 +1,14 @@
-package src.class_03;
+package src.chap_07;
 
 public
 class BlackBoxRefurbish {
 
-    String modelName; //모델명
+    public String modelName; //모델명
+
+    //아래 resolution 접근제어자는 default로 설정한 거다.
     String resolution; //해상도
     private int price; //가격
-    String color; //색상
+    protected String color; //색상
 
     // getter와 setter 자동 완성 방법
     // 위의 코드를 마우스 드래그 한 상태에서 alt+enter 누르고

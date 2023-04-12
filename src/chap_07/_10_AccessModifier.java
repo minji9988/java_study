@@ -1,4 +1,4 @@
-package src.class_03;
+package src.chap_07;
 
 public
 class _10_AccessModifier {
@@ -12,8 +12,8 @@ class _10_AccessModifier {
         // private: 해당 클래스 내에서만 접근 가능
         // public: 모든 클래스에서 접근 가능
         // default: 같은 패키지(폴더) 내에서만 접근 가능
-        // protected: 같은 패키지 내에서 접근 가능하고,
-        //             다른 캐피지인 경우 자식 클래스에서 접근 가능(상속 공부할 때 알게됨)
+        // protected: 같은 패키지 내에서 접근 가능한 경우 또는
+        //  다른 피캐지에서 접근할 경우 자식 클래스에서 접근 가능(상속 공부할 때 알게됨)
 
 
 

@@ -63,7 +63,7 @@ public class BlackBox {
 //        // 이 BlackBox 생성자 함수가 실행된다.
 //        // counter 값의 초기값은 0인데 0에 ++을 해줘서 1로 변한다
 //        // 새로운 객체가 만들어질 때 마다 +1 이 된다.
-//
+
 //        System.out.println("새로운 시리얼 넘버를 발급받았습니다: " + this.serialNumber);
 
 
@@ -218,6 +218,7 @@ public class BlackBox {
     }
 
     void setResolution(String resolution) {
+
         this.resolution = resolution;
     }
 

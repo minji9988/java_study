@@ -1,6 +1,13 @@
 package src.chap_08;
 
 import src.chap_07.BlackBoxRefurbish;
+//다른 패키지(chap_07)에 있는 class(BlackBoxRefurbish)를
+// 가져올 땐 import를 작성해줘야 한다.
+
+//import chap_07.*;
+//위에처럼 작성할 경우 chap_07에 있는 모든 black box class를
+// 다 쓰겠다고 이야기하는 것이다.
+
 
 public
 class _00_AccessModifierTest {

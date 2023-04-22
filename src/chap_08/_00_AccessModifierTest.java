@@ -24,16 +24,16 @@ class _00_AccessModifierTest {
 
         //reolution은 default로 선언했다.
         // default는 같은 패키지(폴더)안에서만 접근 가능해서 오류뜸
-        b1.resolution = "FHD";
-
-        // price는 private으로 선언했고 private은
-        // 같은 class 안에 있는 것 안에서만 접근이 가능하다.
-        b1.price = 20000;
-
-        // color는 protected로 선언했다.
-        // protected는 같은 패키지 내에서, 다른 패키지인 경우 자신 클래서에스 접근 가능
-        // 여기선 패키지도 다르고, 자식 클래스도 아니라 접근 불가
-        b1.color = "블랙";
+//        b1.resolution = "FHD";
+//
+//        // price는 private으로 선언했고 private은
+//        // 같은 class 안에 있는 것 안에서만 접근이 가능하다.
+//        b1.price = 20000;
+//
+//        // color는 protected로 선언했다.
+//        // protected는 같은 패키지 내에서, 다른 패키지인 경우 자신 클래서에스 접근 가능
+//        // 여기선 패키지도 다르고, 자식 클래스도 아니라 접근 불가
+//        b1.color = "블랙";
 
 
     }

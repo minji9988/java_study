@@ -42,7 +42,7 @@ public class BlackBox {
 
     // 접근방식
     // 인스턴스는 b1.modeName 형태로 접근하지만
-    // class 변수는 canAutoReport는 클래스명.클래스변수명 형태로 접근한다.
+    // class 변수, 가령 canAutoReport는 클래스명.클래스변수명 형태로 접근한다.
     // 예) BlackBox.canAutoReport
 
 

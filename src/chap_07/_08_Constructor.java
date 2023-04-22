@@ -66,6 +66,5 @@ class _08_Constructor {
         System.out.println(b2.serialNumber); // 2출력
 
 
-
     }
 }

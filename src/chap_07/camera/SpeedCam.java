@@ -36,5 +36,11 @@ public class SpeedCam extends Camera{
 
     }
 
-
+    @Override
+    //위의 노랑색 글씨로 된 Overrid는 에노테이션이라고 한다.
+    // 컴파일러에게 아래 showMainFeature 페서드는 부모 메서드(Camera)를 오버라이딩
+    // 하는 거라고 알려주는 것이다.
+    public void showMainFeature () {
+        System.out.println(this.name + "의 주요기능 : 속도 측정, 번호 인식");
+    }
 }

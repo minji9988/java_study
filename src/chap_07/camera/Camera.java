@@ -38,5 +38,10 @@ public class Camera { // 부모 클래스
     // Camera class가 부모 class가 돼고, FactoryCam과, SpeedCam이 자식 class가 된다.
 
 
+    // 주요 기능을 보여주는 method
+    public void showMainFeature() {
+        System.out.println(this.name + "의 주요기능 : 사진 촬영, 동영상 녹화");
+    }
+
 
 }

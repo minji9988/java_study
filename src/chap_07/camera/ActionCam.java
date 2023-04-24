@@ -30,7 +30,7 @@ public final class ActionCam extends Camera{ //다른 곳에서 상속 못하게
 //       출력: 액션카메라 ///////////////////////////////
 
 //        ActionCam 에 name 변수가 없을 때는 부모클래스의 name 변수값(카메라)을 출력했지만,
-//        ActionCam 에 name 변수(public String name="액션카메라";가 생기니 이번에는 ActionCam의 name 변수값(액션 카메라)을 출력하게 되네요.
+//        ActionCam 에 name 변수(public String name="액션카메라";)가 생기니 이번에는 ActionCam의 name 변수값(액션 카메라)을 출력하게 되네요.
 //        그러면 부모클래스의 name 변수는 더 이상 쓸 수 없는 것일까요?
 
         //놉!!!!!!!!!! this 대신 super를 사용하면 가능

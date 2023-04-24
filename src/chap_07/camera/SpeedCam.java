@@ -5,7 +5,10 @@ public class SpeedCam extends Camera{
 
     // 과속단속 카메라 class다.
     public SpeedCam () {
-        this.name = "과속단속 카메라";
+
+//        this.name = "과속단속 카메라";
+        super("과속단속 카메라");
+
     }
 
     // 과속단속 카메라도 사진촬영과 동영상 녹화 기능이 있으니까
@@ -22,6 +25,24 @@ public class SpeedCam extends Camera{
 //        System.out.println("동영상을 촬영합니다");
 //
 //    }
+
+//////////////////////////////////////////
+    // Super class lecture 때문에 넣어줌
+    // 사진촬영 메서드
+    public void tackPicture () {
+
+        //System.out.println(this.name + " : 사진을 촬영합니다.");
+        // 위에 줄 대신 아래처럼 작성 가능
+
+        super.tackPicture(); //부모 class(Camera)에 있는 takePicture method를 모두 수행하고 아래 method를 수행
+
+        checkSpeed(); //속도 측정
+        recognizelicensePlate(); //번호판 인식
+
+        //사진을 찍음과 동시에 속도 측정하고, 번호판 인식하기 위해
+        // 위에처럼 작성해 줌
+
+    }
 
     // 속도를 측정해서 이 차가 과속인지 체크하는 메서드도 만들었다.
     public void checkSpeed() {

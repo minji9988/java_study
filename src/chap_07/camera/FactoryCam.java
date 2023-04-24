@@ -16,7 +16,23 @@ class FactoryCam extends Camera{ // 자식 class
     // 자식 class에선 name 변수를 선언할 필요없다.
 
     public FactoryCam() {
-        this.name = "공장카메라";
+        //this.name = "공장카메라";
+
+//        super();
+        // 위의 super();는 부모 class의 생성자를 호출하는 것이다.
+
+        super("공장카메라");
+
+        // 부모 class의 생성자에 접근함과 동시에 해당 생성자 method에
+        // 공장 카메라라는 parameter를 넘겨주는 것
+
+        //    protected Camera(String name) {
+        //        this.name = name; //this.name은 전달받은 name으로 지정
+
+        // 위의 method에 접근하고 String name에
+        // 공장카메라를 넘겨준다.
+
+
     }
 
     ////////////////////////
@@ -36,6 +52,24 @@ class FactoryCam extends Camera{ // 자식 class
 //        System.out.println("동영상을 촬영합니다");
 //
 //    }
+
+
+    // 동영상 녹화 메서드
+    // 15_Super lecture를 위해 넣어줌
+    public void recordVideo () {
+        // System.out.println(this.name + " : 동영상을 촬영합니다");
+        // 위에 줄 대신 아래 줄을 작성할 수도 있다.
+
+        super.recordVideo(); //부모 class에 있는 recordVideo를 수행하고 나서
+        detectFire(); //추가로 자식 class에 있는 detectFire를 수행하라.
+
+        // 위에처럼 작성함으로써 recordVideo가 수행됨과 동시에
+        // detectFire도 수행된다.
+
+        // 자식 class에서 overriding(부모 class에 있는 걸 자식 class에서 재정의한 것)
+        // 했지만 부모 class에 있는 내용을 온전히 사용하면서 그 아래 추가적인 기능(detectFire)를 사용하는 것
+
+    }
 
     public void detectFire() {
         // 화재감지

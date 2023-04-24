@@ -3,6 +3,13 @@ package src.chap_07;
 public
 class _05_MethodOverloading {
 
+
+
+// Method Overloading
+// - 같은 클래스 내에서 똑같은 이름을 가진 method를
+// - parameter의 개수나 타입을 다르게 함으로써 정의할 수 있다.
+
+
     public static
     void main ( String[] args ) {
 
@@ -12,10 +19,10 @@ class _05_MethodOverloading {
         // record method를 만들고자 한다.
         // record를 할 때 어떤 information이 표시된다.
         // 녹화시간, 속도, 위치 정보를 표현해 준다.
-        // record method는 BlackBox file에 정의함
+        // record method는 BlackBox class에 정의함
 
 
-        // BlackBox 파일에 정의된 record method를 불어와보자
+        // BlackBox class에 정의된 record method를 불어와보자
 
         b1.record(false, false, 10);
         // record는 날짜, 속도, min 총 3개의 인자를 받으니 3개 작성

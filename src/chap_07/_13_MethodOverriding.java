@@ -2,13 +2,13 @@ package src.chap_07;
 
 // 메서드 오버라이딩
 
-// 메서드 오버라이딩은 오버로딩이란 다르다.
+// 메서드 오버라이딩은 오버로딩과 다르다.
 
-// Method Overloading
+// Method Overloading(과부화/너무 많이 주다)
 // - 같은 클래스 내에서 똑같은 이름을 가진 method를
 // - parameter의 개수나 타입을 다르게 함으로써 정의할 수 있다.
 
-// Method overriding
+// Method overriding(기각하다)
 // - 부모 class에 정의되어 있는 method를 자식 class에 서 재정의하는 것
 
 
@@ -16,8 +16,7 @@ import src.chap_07.camera.Camera;
 import src.chap_07.camera.FactoryCam;
 import src.chap_07.camera.SpeedCam;
 
-public
-class _13_MethodOverriding {
+public class _13_MethodOverriding {
     public static void main ( String[] args ) {
 
     // Camera class에서 showMainFeature() method를 만듬
@@ -38,9 +37,6 @@ class _13_MethodOverriding {
         // Camera class에 있는 showMainFeature method를
         // copy해서 FacotryCam에 paste한 후 method안에 작성한
         // 내용을 수정하면 Method Overriding 한 것
-
-
-
 
 
     }

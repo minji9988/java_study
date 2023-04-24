@@ -22,8 +22,8 @@ class _09_GetterSetter {
         b1.color = "까망이";
 
         //black box 제품을 할인행사한다고 한다.
-        // 원래 가격에서 -5000을 넣어줘야 하는 데 실수로 -5000원만 입력했다.
-         b1.price = -5000;
+        // 원래 가격(10,000)에서 -5000을 넣어줘야 하는 데 실수로 -5000원만 입력했다.
+        b1.price = -5000;
         System.out.println("가격: " + b1.price + "원");
         // 이 상태로 출력하면 엉뚱하게 -5000원이 출력되어 버린다.
         System.out.println("해상도: " + b1.resolution);

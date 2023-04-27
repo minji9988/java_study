@@ -17,4 +17,22 @@ public class FactoryCam extends Camera{
         // 똑같이 SpeedCam class 만들어서 writing 해준다.
 
     }
+
+    //// interface ////////////////////
+
+    // 화재를 감지하면 신고도 자동으로 되도록 기능 설정
+
+    // 화재감지 method
+    public void detect() {
+        System.out.println("화재를 감지합니다.");
+    }
+
+    // 신고 method
+    public void report() {
+        System.out.println("화재 신고를 진행합니다.");
+    }
+
+    ////// SpeedCam에도 동일하게 작성
+
+
 }

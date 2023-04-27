@@ -25,6 +25,7 @@ public abstract class Camera {
     // showMainFeature method를 구현하도록 하려 한다.
 
     // factorcy cam과 speedcam에서 상속받아서 만들어 보고자 한다.
+    // 화재를 감지하면 자동으로 신고를 해주는 기능을 추가할 예정이다.
 
 
 

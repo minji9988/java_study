@@ -12,13 +12,13 @@ package src.chap_08;
 //- 이때 abstract란 키워드가 사용된다.
 //
 //abstract 사용범위
-// : 추상 클래스(완선 X 클래스), 추상 메서드
+// : 추상 클래스(완성 안 된 클래스), 추상 메서드
 //
-//- abstarct를 통해 추상 클래스를 만들 수 있다.
+//- abstarct를 통해 '추상 클래스'를 만들 수 있다.
 //- 추상 클래스란 아직 완성되지 않은 클래스다.
 //- 완성되지 않은 클래스라 객체로 만들 수 없다.
 //
-//- abstract를 통해 추상 메서드를 만들 수 있다.
+//- abstract를 통해 '추상 메서드'를 만들 수 있다.
 // 추상 클래스에서만 사용 가능한, 껍데기만 있는 메서드다.
 
 import src.chap_08.camera.Camera;
@@ -37,7 +37,6 @@ public class _01_AbstractClass {
 //    Camera camera = new Camera();
 
         //객체를 만들려고 시도했더니 error 뜸.
-        // Camera는 abstract해서 객체를 못만듬
         // Camera는 추상 class라 객체를 만들 수 없으나
         // 추상 class를 inheritance한 child class는 만들 수 있다.
 

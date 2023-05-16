@@ -10,8 +10,7 @@ class _05_MethodOverloading {
 // - parameter의 개수나 타입을 다르게 함으로써 정의할 수 있다.
 
 
-    public static
-    void main ( String[] args ) {
+    public static void main ( String[] args ) {
 
         BlackBox b1 = new BlackBox();
         b1.modelName = "까망이";

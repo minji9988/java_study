@@ -6,6 +6,7 @@ package src.chap_09;
 // class도 그렇게 만들 수 있다.
 // coffee 패키지를 만들고, CoffeeByNumber를 통해 설명하겠다.
 
+import src.chap_09.coffee.Coffee;
 import src.chap_09.coffee.CoffeeByName;
 import src.chap_09.coffee.CoffeeByNickName;
 import src.chap_09.coffee.CoffeeByNumber;
@@ -84,6 +85,22 @@ public class _02_GenericClass {
         // 오류가 뜨지 않고, 실행하고 나서야 오류가 노출된다.
 
         // 이런 점을 개선하기 위해 generic class를 사용할 수 있다.
+
+        System.out.println("----------------------------------");
+
+        //15. Coffee class 생성하고, Coffee class를 generic class로 만든 뒤
+        // 아래와 같이 사용할 수 있다.
+        // 다이아몬드<>에 어떤 type 사용할지 작성
+        Coffee<Integer> c5 = new Coffee<>(35);
+        c5.ready(); // 커피 준비 완료
+        int c5Name = c5.name; // 정수형 데이터라 형변환없이 선언 가능
+        // 위에선  int c3Name = (int) c3.name; 이렇게 형변환이 필요했었다.
+        System.out.println("주문 고객 번호; " + c5Name);
+
+        Coffee<String> c6 = new Coffee<>("조세호");
+        c6.ready();
+        String c6Name = c6.name;
+        System.out.println("주문 고객 이름; " + c6Name);
 
     }
 

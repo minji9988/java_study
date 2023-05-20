@@ -102,6 +102,10 @@ public class _02_GenericClass {
         String c6Name = c6.name;
         System.out.println("주문 고객 이름; " + c6Name);
 
+
+        // 정리하자면, 하나의 클래스(Coffee)를 통해 서로 다른 데이터 형태를
+        // 처리할 수 있었다. 이렇게 하면 코드의 중복 없앨 수 있고,
+        // 값을 가져올 때 형 변환을 할 필요도 없어서 개발 상 실수도 줄일 수 있음
     }
 
 }

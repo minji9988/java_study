@@ -10,6 +10,8 @@ import src.chap_09.coffee.Coffee;
 import src.chap_09.coffee.CoffeeByName;
 import src.chap_09.coffee.CoffeeByNickName;
 import src.chap_09.coffee.CoffeeByNumber;
+import src.chap_09.coffee.CoffeeByUser;
+import src.chap_09.user.User;
 
 public class _02_GenericClass {
 
@@ -106,6 +108,51 @@ public class _02_GenericClass {
         // 정리하자면, 하나의 클래스(Coffee)를 통해 서로 다른 데이터 형태를
         // 처리할 수 있었다. 이렇게 하면 코드의 중복 없앨 수 있고,
         // 값을 가져올 때 형 변환을 할 필요도 없어서 개발 상 실수도 줄일 수 있음
+
+        System.out.println("---------------------------");
+
+        // 16. Generic class type 제한
+
+        CoffeeByUser<User> c7 = new CoffeeByUser<>(new User("강호동"));
+        // 강호동이라는 이름을 가진 User라는 객체를 new 연산자가 생성하고,
+        // 이 객체를 CoffeeByUser class를 생성할 때 집어넣어서
+        // 커피주문을 하게 된 것이다.
+
+        c7.ready();
+
+        CoffeeByUser<User> c8 = new CoffeeByUser<>(new User("강호동"));
+        // CoffeeByUser class 객체를 만드는데, VIPUser 객체를 만든다.
+        c8.ready();
+
+        System.out.println("---------------------------");
+
+        // 17. 여러 개의 값을 전달해야 하는 경우
+        // 2개 이상의 파라미터를 한 꺼번에 처리하는 방법을 살펴보자
+
+        // 일단 아래는 한 개일 때
+        orderCoffee("김영철");
+        orderCoffee("35");
+
+        System.out.println("---------------------------");
+
+
+        // 아래는 2개 일 때
+        orderCoffee("김희철", "아메리카노");
+        orderCoffee(37, "라떼");
+
+   }
+
+   // 1개일 때 method
+   public static <T> void orderCoffee(T name) {
+       System.out.println("Complete cofffe: " + name );
+   }
+
+   // 2개일 때 method
+   // 주문한 사람뿐만 아니라 어떤 커피도 주문했는지도 알려주는 것이다.
+    public static <T, V> void orderCoffee(T name, V coffee) {
+        System.out.println(coffee + "Ready: " + name );
     }
+
+
 
 }
